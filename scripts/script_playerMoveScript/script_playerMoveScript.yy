@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_playerMoveScript",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_playerMoveScript",
+  "parent":{
+    "name":"JustHavingSomeRocks",
+    "path":"JustHavingSomeRocks.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

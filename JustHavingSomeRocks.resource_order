@@ -1,0 +1,11 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"oPlayer","order":2,"path":"objects/oPlayer/oPlayer.yy",},
+    {"name":"script_playerMoveScript","order":4,"path":"scripts/script_playerMoveScript/script_playerMoveScript.yy",},
+    {"name":"sPlayerIdle","order":3,"path":"sprites/sPlayerIdle/sPlayerIdle.yy",},
+    {"name":"sPlayerWalk","order":1,"path":"sprites/sPlayerWalk/sPlayerWalk.yy",},
+    {"name":"sStaticBg","order":5,"path":"sprites/sStaticBg/sStaticBg.yy",},
+    {"name":"sStaticFg","order":6,"path":"sprites/sStaticFg/sStaticFg.yy",},
+  ],
+}
