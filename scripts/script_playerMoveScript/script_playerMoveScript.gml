@@ -1,6 +1,8 @@
 // go ahead and make these so other people can use them :)
 global.moving_left = false;
 global.moving_right = false;
+global.y_vel = 0;
+global.y_acc = 1;
 
 function player_key_hit_release() {
 	// arrays of keys that equal left/right
