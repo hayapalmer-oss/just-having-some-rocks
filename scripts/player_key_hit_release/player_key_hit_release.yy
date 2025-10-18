@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"script_playerMoveScript",
+  "%Name":"player_key_hit_release",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"script_playerMoveScript",
+  "name":"player_key_hit_release",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

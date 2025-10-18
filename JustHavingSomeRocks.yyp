@@ -31,7 +31,7 @@
     {"id":{"name":"draw_as_inverse","path":"scripts/draw_as_inverse/draw_as_inverse.yy",},},
     {"id":{"name":"moveBg","path":"scripts/moveBg/moveBg.yy",},},
     {"id":{"name":"player_jump","path":"scripts/player_jump/player_jump.yy",},},
-    {"id":{"name":"script_playerMoveScript","path":"scripts/script_playerMoveScript/script_playerMoveScript.yy",},},
+    {"id":{"name":"player_key_hit_release","path":"scripts/player_key_hit_release/player_key_hit_release.yy",},},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},},
     {"id":{"name":"sPlayerWalk","path":"sprites/sPlayerWalk/sPlayerWalk.yy",},},
     {"id":{"name":"sStaticBg","path":"sprites/sStaticBg/sStaticBg.yy",},},

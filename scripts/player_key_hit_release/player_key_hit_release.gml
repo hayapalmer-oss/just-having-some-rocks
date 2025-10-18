@@ -2,7 +2,7 @@
 global.moving_left = false;
 global.moving_right = false;
 global.y_vel = 0;
-global.y_acc = 1;
+global.y_acc = 0.5;
 
 function player_key_hit_release() {
 	// arrays of keys that equal left/right

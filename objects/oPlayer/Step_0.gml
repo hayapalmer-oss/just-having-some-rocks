@@ -1,11 +1,5 @@
-// the tilemap layer that we are using for platforms
-var all_floor_bits = layer_get_all_elements("walls_and_floors");
-
-var check_and_delete = function(layer_id) {
-	show_debug_message(object_get_name(layer_id))
-}
-
-array_foreach(all_floor_bits, check_and_delete)
+// an array of all objects that the player can collide with.
+var things_that_are_collidable = [oTile]
 
 ///////////
 // MOVING X
@@ -22,7 +16,7 @@ if (global.moving_right || global.moving_left) {
 	var step_size_x = player_speed * direc * delta_time;
 
 	// make sure the space is empty and move x
-	if (!place_meeting(x + step_size_x, y, all_floor_bits)) {
+	if (!place_meeting(x + step_size_x, y-1, things_that_are_collidable)) {
 		// actually move
 		x += step_size_x
 	}
@@ -37,23 +31,19 @@ var step_size_y = global.y_vel;
 show_debug_message("velocity: {0}, acceleration: {1}", global.y_vel, global.y_acc)
 
 // if there is nothing stopping the player's fall
-if (!place_meeting(x, y + step_size_y, all_floor_bits)) {
-	show_debug_message("enter falling")
+if (!place_meeting(x, y + step_size_y, things_that_are_collidable)) {
 	// move and change velocity by acceleratoin
 	y += step_size_y;
 	global.y_vel += global.y_acc;
-	show_debug_message("falling")
 } 
 
 else {
-	show_debug_message("enter grounding check")
 	// if we would hit something, step down until we actually hit it.
 	var full_step_y = 0;
 	while (true) {
-		if (!place_meeting(x, y + full_step_y, all_floor_bits)) full_step_y += 1;
+		if (!place_meeting(x, y + full_step_y, things_that_are_collidable)) full_step_y += 1;
 		else break;
 	}
 	
-	y += full_step_y - 1;
-	show_debug_message("full_step_y: {0}", full_step_y)
+	y += full_step_y;
 }
